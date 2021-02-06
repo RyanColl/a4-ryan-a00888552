@@ -1,0 +1,49 @@
+@media screen and (min-width:1000px) {
+    .sticky-bar {
+        position: sticky;
+        top: 0px;
+        display: grid;
+        grid-template-columns: 10fr 0.8fr 0.4fr;
+        transition: border-bottom 1s;
+    }
+    
+    h1 {
+        grid-column: 1/2; 
+        grid-row: 1/2;
+    }
+    ul {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 6.5fr 2.5fr;
+    }
+    main {
+        grid-column: 1/2;
+    }
+    aside {
+        grid-column: 2/3;
+    }
+    .scrolled-border {
+        border-bottom: 20px;
+        transition: border-bottom 1s;
+    }
+}   
+header {
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+#img {
+    box-sizing: border-box;
+    object-fit: cover;
+    width: 100%;
+}
